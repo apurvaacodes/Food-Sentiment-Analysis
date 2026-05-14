@@ -315,7 +315,7 @@ with tab2:
                     with col2:
                         st.metric("Negative Reviews", negative_count, f"{negative_count/len(df)*100:.1f}%")
                     with col3:
-st.metric("Avg Confidence", f"{avg_confidence:.2%}")
+                        st.metric("Avg Confidence", f"{avg_confidence:.2%}")
                     
                     st.divider()
                     
