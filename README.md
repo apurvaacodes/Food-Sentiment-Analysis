@@ -29,27 +29,6 @@ Data-driven decision making
 
 
 
-┌─────────────────────────────────────┐
-│         Frontend Layer              │
-│  Streamlit | Plotly | Pandas       │
-└─────────────────────────────────────┘
-                  ↓
-┌─────────────────────────────────────┐
-│      Application Logic Layer        │
-│  Session State | Data Processing   │
-└─────────────────────────────────────┘
-                  ↓
-┌─────────────────────────────────────┐
-│      Machine Learning Layer         │
-│  Logistic Regression | TF-IDF      │
-└─────────────────────────────────────┘
-                  ↓
-┌─────────────────────────────────────┐
-│        Model & Vectorizer           │
-│  sentiment_model.pkl | vectorizer  │
-└─────────────────────────────────────┘
-
-
 
 **Technology Breakdown:**
 Language: Python 3.x
@@ -99,28 +78,6 @@ Bulk Processing	- 100+ reviews/minute
 Confidence Range -	0-100%
 Model Size -	~2-5 MB
 Memory Usage -	~200-300 MB
-
-
-**Project Structure**
-
-food-sentiment-analysis/
-│
-├── 📄 app.py                    # Main application (600+ lines)
-├── 📋 requirements.txt          # Dependencies
-├── 📖 README.md                 # Documentation
-├── ⚖️ LICENSE                   # MIT License
-├── 🚫 .gitignore               # Git ignore rules
-│
-├── 📁 models/
-│   ├── vectorizer.pkl          # TF-IDF vectorizer
-│   └── sentiment_model.pkl     # Trained model
-│
-├── 📁 data/
-│   ├── sample_reviews.csv      # Test data
-│   └── training_data.csv       # Training dataset
-│
-└── 📁 assets/
-    └── sentiment_image.png     # Project logo
 
 
 
